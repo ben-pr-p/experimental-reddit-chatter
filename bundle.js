@@ -127,7 +127,7 @@ var speakMsg = sound.speakMsg;
 var bindUserControls = sound.bindUserControls;
 
 var numBuckets = 30;
-var N = 5;
+var N = 10;
 var firstRodeo = true;
 var buttonText = 'Go!';
 
@@ -367,7 +367,7 @@ module.exports.greedySalesman = function (items, distanceFn) {
 },{}],5:[function(require,module,exports){
 var d3 = require('d3');
 
-var rate = 1;
+var rate = 3;
 var voiceIdx = 0;
 var utterance;
 var voice;
