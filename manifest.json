@@ -1,8 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Immersive Reddit",
-  "description": "This extension enhances the Reddit browsing experience",
+  "name": "Experimental Reddit Chatter",
   "version": "1.0",
 
   "browser_action": {
@@ -10,7 +9,7 @@
     "default_popup": "popup.html"
   },
   "content_scripts": [{
-    "matches": ["http://*/*", "https://*/*"],
+    "matches": ["http://www.reddit.com/*", "https://www.reddit.com/*"],
     "js": ["bundle.js"]
   }],
   "permissions": [
