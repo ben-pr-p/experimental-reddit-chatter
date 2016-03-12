@@ -24,7 +24,7 @@ Initially, words are spoken with a default voice. Pressing the left or right arr
 
 # Known Problems
 
-* The plug-in can only speak so many words aloud before quietly failing, requiring a refresh to play again. I think this is because of memory issues, specifically because I was able to significantly expand the number of words before failing by exploying better memory management techniques.
+* The plug-in can only speak so many words aloud before quietly failing, requiring a refresh to play again. I think this is because of memory issues, specifically because I was able to significantly expand the number of words before failing by employing better memory management techniques.
 
 * The use of color is not meaningful – I could probably think of a more meaningful and distinguishable feature of the data to map to the color of the output.
 
