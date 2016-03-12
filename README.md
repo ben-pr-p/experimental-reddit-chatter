@@ -8,7 +8,7 @@ Upon clicking "Go!", the browser plug-in does a shallow crawl of recent threads 
 
 It additionally computes a context for each word in each time period using a simple proximity metric (in the sentence "Colorless green ideas sleep furiously", the generated context matrix is for `green` is : `{colorless: .5, green: 1, ideas: .5, sleep: .333, furiously: .25}`).
 
-# Visuals
+## Visuals
 
 It uses the context matrix to decide the vertical layout of the words in the resulting model. The "distance" between two words is defined by the euclidean distance between their context matrices. The goal in the vertical layout is to have words with similar contexts appear next to each other, so I treat the vertical layout as a traveling salesman problem and use the simplest greedy algorithm.
 
@@ -16,19 +16,19 @@ Each word, mapped to a y position from 1-360, is then drawn as a box in each ver
 
 Thus, if each of the top 360 words appeared with equal frequency, you would see a perfect color gradient (very, very unlikely). 
 
-# Audio
+## Audio
 
 The audio uses the same data to map, but y position is mapped to frequency instead of hue, and the relative frequency of the word is mapped to volumne instead of size. I take the top 10 words for each time period and say them out loud at the respective frequency and volumne using the Web Speech API, which accesses the user's computer's native text to speech capabilities. 
 
 Initially, words are spoken with a default voice. Pressing the left or right arrow changes the voice, and pressing `r` cycles through the different voices available randomly. Pressing `0` resets the voice to "Alex" on a Mac.
 
-## Known Problems
+# Known Problems
 
 * The plug-in can only speak so many words aloud before quietly failing, requiring a refresh to play again. I think this is because of memory issues, specifically because I was able to significantly expand the number of words before failing by exploying better memory management techniques.
 
 * The use of color is not meaningful – I could probably think of a more meaningful and distinguishable feature of the data to map to the color of the output.
 
-## Demo
+# Demo
 
 
 
