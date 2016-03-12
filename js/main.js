@@ -15,7 +15,7 @@ var speakMsg = sound.speakMsg;
 var bindUserControls = sound.bindUserControls;
 
 var numBuckets = 30;
-var N = 5;
+var N = 10;
 var firstRodeo = true;
 var buttonText = 'Go!';
 

@@ -1,6 +1,6 @@
 var d3 = require('d3');
 
-var rate = 1;
+var rate = 3;
 var voiceIdx = 0;
 var utterance;
 var voice;
