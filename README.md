@@ -30,7 +30,7 @@ Initially, words are spoken with a default voice. Pressing the left or right arr
 
 # Demo
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/dVt91eAqk3s" frameborder="0" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/dVt91eAqk3s/0.jpg)](http://www.youtube.com/watch?v=dVt91eAqk3s)
 
 # Installation
 First, open terminal and type 
